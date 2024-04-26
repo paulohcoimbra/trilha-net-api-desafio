@@ -96,7 +96,7 @@ namespace TrilhaApiDesafio.Controllers
                 return NotFound();
 
             _context.Tarefas.Remove(tarefaBanco);
-
+            _context.SaveChanges();
             return NoContent();
         }
     }
